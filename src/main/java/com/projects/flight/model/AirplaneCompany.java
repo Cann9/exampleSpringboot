@@ -35,6 +35,10 @@ public class AirplaneCompany
 	public void setFlights(Set<flight> flights) {
 		this.flights = flights;
 	}
+	@Override
+	public String toString() {
+		return "AirplaneCompany [id=" + id + ", CompanyName=" + CompanyName + "]";
+	}
 	
 	
 
