@@ -1,0 +1,45 @@
+INSERT INTO public.T_Airplane (id,AIRPLANE_NAME) VALUES(1,'ADNAN MENDERES HAVALİMANI',1);
+INSERT INTO public.T_Airplane (id,AIRPLANE_NAME) VALUES(1,'ADNAN MENDERES HAVALİMANI',2);
+INSERT INTO public.T_Airplane (id,AIRPLANE_NAME) VALUES(2,'SABİHA GÖKÇEK HAVALİMANI',1);
+INSERT INTO public.T_Airplane (id,AIRPLANE_NAME) VALUES(2,'SABİHA GÖKÇEK HAVALİMANI',2);
+INSERT INTO public.t_Airplane (id,AIRPLANE_NAME) VALUES(3,'ATATÜRK  HAVALİMANI',1);
+INSERT INTO public.t_Airplane (id,AIRPLANE_NAME) VALUES(3,'ATATÜRK  HAVALİMANI',2);
+INSERT INTO public.t_Airplane (id,AIRPLANE_NAME) VALUES(4,'ADANA ŞAKİR PAŞA HAVALİMANI',1);
+INSERT INTO public.t_Airplane (id,AIRPLANE_NAME) VALUES(4,'ADANA ŞAKİR PAŞA HAVALİMANI',2);
+
+
+INSERT INTO PUBLIC.T_AIRPLANECOMPANY (id,company_name) VALUES(1,'PEGASUS');
+INSERT INTO PUBLIC.T_AIRPLANECOMPANY (id,company_name) VALUES(5,'THY');
+
+
+INSERT INTO PUBLIC.T_CUSTOMER (id,customer_full_name) VALUES(1,'can ilhan');
+INSERT INTO PUBLIC.T_CUSTOMER (id,customer_full_name) VALUES(2,'selin ilh');
+INSERT INTO PUBLIC.T_CUSTOMER (id,customer_full_name) VALUES(3,'mert kaşık');
+INSERT INTO PUBLIC.T_CUSTOMER (id,customer_full_name) VALUES(4,'canan bıç');
+
+
+INSERT INTO PUBLIC.T_FLIGHT (id,price,airplanecompany_id) VALUES(1, 150,1);
+INSERT INTO PUBLIC.T_FLIGHT (id,price,airplanecompany_id) VALUES(2, 160,2);
+
+INSERT INTO PUBLIC.T_TICKET (id,flight_id,customer_id) VALUES(1,1,4);
+INSERT INTO PUBLIC.T_TICKET (id,flight_id,customer_id) VALUES(1,2,2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

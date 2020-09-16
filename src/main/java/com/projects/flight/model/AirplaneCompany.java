@@ -11,6 +11,14 @@ public class AirplaneCompany
 	private Set<AirPlane> airplane=new HashSet<>();
 	private Set<flight> flights=new HashSet<>();
 	
+
+	
+	public Set<AirPlane> getAirplane() {
+		return airplane;
+	}
+	public void setAirplane(Set<AirPlane> airplane) {
+		this.airplane = airplane;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -23,12 +31,8 @@ public class AirplaneCompany
 	public void setCompanyName(String companyName) {
 		CompanyName = companyName;
 	}
-	public Set<AirPlane> getAirplane() {
-		return airplane;
-	}
-	public void setAirplane(Set<AirPlane> airplane) {
-		this.airplane = airplane;
-	}
+
+	
 	public Set<flight> getFlights() {
 		return flights;
 	}

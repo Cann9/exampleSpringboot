@@ -1,0 +1,58 @@
+create table public.t_Airplane
+(
+	id bigint not null ,
+	AIRPLANE_NAME VARCHAR(255),
+	airplaneCompany_id BIGINT
+	
+);
+
+
+CREATE TABLE PUBLIC.T_AIRPLANECOMPANY
+(
+	id  BIGINT NOT NULL ,
+	company_name VARCHAR(255)
+	
+	
+);
+
+CREATE TABLE PUBLIC.T_CUSTOMER
+(
+	id bigint not null ,
+	customer_full_name varchar(255)
+	
+);
+
+CREATE TABLE PUBLIC.T_TICKET
+(
+	
+	id bigint not null,
+	flight_id BIGINT,
+	customer_id BIGINT
+);
+
+CREATE TABLE PUBLIC.T_FLIGHT
+(
+	id bigint not null ,
+	price BIGINT,
+	airplanecompany_id BIGINT 
+);
+ALTER TABLE public.T_FLIGHT ADD CONSTRAINT PUBLIC.CONSTRAINT_5 PRIMARY KEY(id);
+ALTER TABLE public.t_Airplane ADD CONSTRAINT PUBLIC.CONSTRAINT_1 PRIMARY KEY(id);
+ALTER TABLE public.t_AIRPLANECOMPANY ADD CONSTRAINT PUBLIC.CONSTRAINT_2 PRIMARY KEY(id);
+ALTER TABLE public.T_CUSTOMER ADD CONSTRAINT PUBLIC.CONSTRAINT_3 PRIMARY KEY(id);
+
+
+ALTER TABLE PUBLIC.T_FLIGHT ADD CONSTRAINT public.Constraıntforeıgnkey_4 FOREIGN KEY(airplanecompany_id) REFERENCES PUBLIC.T_AIRPLANECOMPANY(id);
+ALTER TABLE PUBLIC.T_AIRPLANECOMPANY ADD CONSTRAINT public.Constraıntforeıgnkey_1 FOREIGN KEY(airplane_id) REFERENCES PUBLIC.T_Airplane(id);
+ALTER TABLE PUBLIC.T_TICKET ADD CONSTRAINT public.Constraıntforeıgnkey_2 FOREIGN KEY(flight_id) REFERENCES PUBLIC.T_FLIGHT(id);
+ALTER TABLE PUBLIC.T_TICKET ADD CONSTRAINT public.Constraıntforeıgnkey_3 FOREIGN KEY(customer_id) REFERENCES PUBLIC.T_CUSTOMER(id);
+
+
+
+
+
+
+
+
+
+
